@@ -1,0 +1,29 @@
+
+Find app at : http://backchannel.eu01.aws.af.cm/
+
+Creating BackChannel
+====================
+
+1) Installed Python
+2) Installed virtualenv : "sudo apt-get install python-virtualenv"
+3) Set up local database : "sudo apt-get install mysql-server"
+4) Created test user for local MySQL, test DB in MySQL and gave test user access to DB (and set user able to access DBs on localhost) using MySQL Workbench
+5) Installed easy_install : http://peak.telecommunity.com/DevCenter/setuptools
+6) Installed the Python DB connector using SetUpTools: "sudo easy_install MySQL-python"
+7) Created a new account at App Fog : https://www.appfog.com
+8) Installed App Fog command line tools and login : https:/docs.appfog.com/getting-started/af-cli
+8) Created a Flask app you want at App Fog site
+10) Created a MySQL service at App Fog and bound it to the app
+11) Created a phpMyAdmin app on App Fog and bound it to the BackChannel databased (need to set PMA_PASSWORD env variable : "af env-add backchannel PMA_PASSWORD='<password>'") - Log in with "email" / "password"
+12) Created a Github project for the project and clone to a local folder : "git clone <url>"
+13) In that folder use the AF command line tools to pull the initial state of the code into that folder : "af pull backchannel"
+14) Installed Flask into local environment : "sudo pip install Flask"
+15) Set up virtualenv : "virtualenv --system-site-packages ../backchannel-venv"
+15) Tested pushing project to both AF and Github : "af update backchannel", "git commit -m 'doc-line'" / "git push"
+15) Initial local test : ". ../backchannel-venv/bin/activate", "python wsgi.py"
+16) Updated requirements.txt to add "mysql-python==1.2.3"
+17) Used test version of wsgi.py to prove connections to both local and remote databases
+18) Installed twitter library (http://goo.gl/dU6HJ) to local machine : "sudo pip install twitter"
+19) Added "twitter=1.9.4" to requirements.txt
+20) Started local-test / Github check-in / App Fog update cycle
+
