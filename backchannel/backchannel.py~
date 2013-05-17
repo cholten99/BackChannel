@@ -217,7 +217,7 @@ def do_add(screen_name, parts, hashtags, ats):
         member_string[:-2]
         dm(screen_name, member_string)
       if (len(invited_list) != 0):
-        invited_string = "Unable to invite following as they are already invited to " + channel + ": "
+        invited_string = "Unable to invite following as they are already invited to " + hashtags[0] + ": "
         for invited in invited_list:
           invited_string += "@" + invited + ", "
         invited_string[:-2]
@@ -228,14 +228,11 @@ def do_add(screen_name, parts, hashtags, ats):
           not_following_string += "@" + not_following + ", "
         not_following_string[:-2]
         dm(screen_name, not_following_string)
-      new_string = "Invited the following to join " + channel + ": "
-      for new in ats:
-        cursor.execute("INSERT INTO users VALUES (%s, %s, False)",[new, channel])
-        db.commit()
-        dm(new, screen_name + " has invited you to join channel " + channel)
-        new_string += "@" + new + ", "
-      new_string[:-2]
-      dm(screen_name, new_string)
+      not_following_string = "Invited the following to join " + hashtags[0] + ": "
+      for new in not_following_list:
+        not_following_string += "@" + not_following + ", "
+      not_following_string[:-2]
+      dm(screen_name, not_following_string)
 
 
 # Attempt to boot someone off a channel, DM failure back or remove and DM person gone and all left
