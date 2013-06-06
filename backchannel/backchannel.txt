@@ -1,0 +1,291 @@
+INFO:root:2013-06-01 22:09:20 : >>> RESTART <<<
+INFO:root:2013-06-01 22:09:36 : >>> RESTART <<<
+INFO:root:2013-06-01 22:10:50 : >>> RESTART <<<
+INFO:root:2013-06-01 22:13:50 : >>> RESTART <<<
+INFO:root:2013-06-01 22:13:55 : >>> RESTART <<<
+INFO:root:2013-06-01 22:26:17 : >>> RESTART <<<
+INFO:root:2013-06-01 22:34:12 : >>> RESTART <<<
+INFO:root:2013-06-01 22:35:13 : >>> RESTART <<<
+INFO:root:2013-06-01 22:37:54 : >>> RESTART <<<
+INFO:root:2013-06-01 22:42:23 : >>> RESTART <<<
+INFO:root:2013-06-01 22:44:27 : >>> RESTART <<<
+INFO:root:2013-06-01 23:10:26 : >>> RESTART <<<
+INFO:root:2013-06-01 23:14:19 : >>> RESTART <<<
+INFO:root:2013-06-01 23:15:26 : >>> RESTART <<<
+INFO:root:2013-06-01 23:17:58 : >>> RESTART <<<
+INFO:root:2013-06-01 23:19:24 : >>> RESTART <<<
+INFO:root:2013-06-01 23:28:06 : >>> RESTART <<<
+INFO:root:2013-06-01 23:28:19 : DMing TestyMcTest99 with http://stuff.thing
+INFO:root:2013-06-01 23:34:48 : >>> RESTART <<<
+INFO:root:2013-06-01 23:36:10 : >>> RESTART <<<
+INFO:root:2013-06-01 23:36:53 : >>> RESTART <<<
+INFO:root:2013-06-01 23:37:51 : >>> RESTART <<<
+INFO:root:2013-06-01 23:40:52 : >>> RESTART <<<
+INFO:root:2013-06-01 23:41:01 : DMing TestyMcTest99 with Hi TestyMcTest99, welcome to BackChannel, have a read of the instructions : http://stuff.thing
+INFO:root:2013-06-01 23:41:01 : DMing TestyMcTest99 with http://stuff.thing
+INFO:root:2013-06-01 23:48:14 : >>> RESTART <<<
+INFO:root:2013-06-01 23:48:49 : >>> RESTART <<<
+INFO:root:2013-06-01 23:48:57 : DMing TestyMcTest99 with Hi TestyMcTest99, welcome to BackChannel, have a read of the instructions : http://stuff.thing
+INFO:root:2013-06-01 23:48:57 : DMing TestyMcTest99 with http://stuff.thing
+INFO:root:2013-06-01 23:49:44 : >>> RESTART <<<
+INFO:root:2013-06-01 23:49:50 : DMing TestyMcTest99 with Hi TestyMcTest99, welcome to BackChannel, have a read of the instructions : http://stuff.thing
+INFO:root:2013-06-01 23:49:50 : DMing TestyMcTest99 with http://stuff.thing
+INFO:root:2013-06-01 23:58:36 : >>> RESTART <<<
+INFO:root:2013-06-02 00:03:21 : >>> RESTART <<<
+INFO:root:2013-06-02 00:03:30 : DMing TestyMcTest99 with Hi TestyMcTest99, welcome to BackChannel, have a read of the instructions : http://stuff.thing
+INFO:root:2013-06-02 00:04:10 : DMing TestyMcTest99 with Hi TestyMcTest99, welcome to BackChannel, have a read of the instructions : http://stuff.thing
+INFO:root:2013-06-02 00:05:55 : >>> RESTART <<<
+INFO:root:2013-06-02 00:06:04 : DMing TestyMcTest99 with Hi TestyMcTest99, welcome to BackChannel, have a read of the instructions : http://stuff.thing
+INFO:root:2013-06-02 00:10:29 : >>> RESTART <<<
+INFO:root:2013-06-02 00:10:38 : DMing TestyMcTest99 with Sorry, I don't understand, for help see http://stuff.thing
+INFO:root:2013-06-02 00:11:24 : DMing TestyMcTest99 with You do not own any channels
+INFO:root:2013-06-02 00:59:11 : >>> RESTART <<<
+INFO:root:2013-06-02 01:07:42 : DMing TestyMcTest99 with You do not own any channels
+INFO:root:2013-06-02 01:12:50 : >>> RESTART <<<
+INFO:root:2013-06-02 01:15:08 : DMing TestyMcTest99 with Sorry, I don't understand, for help see http://stuff.thing
+INFO:root:2013-06-02 01:46:03 : >>> RESTART <<<
+INFO:root:2013-06-02 01:46:17 : DMing TestyMcTest99 with Sorry, I don't understand, for help see http://stuff.thing
+INFO:root:2013-06-02 01:47:06 : DMing TestyMcTest99 with You do not own any channels
+INFO:root:2013-06-02 01:52:53 : >>> RESTART <<<
+INFO:root:2013-06-02 01:56:24 : DMing TestyMcTest99 with Sorry, I don't understand, for help see http://stuff.thing
+INFO:root:2013-06-02 01:56:30 : DMing TestyMcTest99 with You do not own any channels
+INFO:root:2013-06-02 01:59:06 : >>> RESTART <<<
+INFO:root:2013-06-02 01:59:18 : DMing TestyMcTest99 with Sorry, I don't understand, for help see http://stuff.thing
+INFO:root:2013-06-02 01:59:22 : DMing TestyMcTest99 with You do not own any channels
+INFO:root:2013-06-02 02:08:25 : >>> RESTART <<<
+INFO:root:2013-06-02 02:08:32 : DMing TestyMcTest99 with Sorry, I don't understand, for help see http://stuff.thing
+INFO:root:2013-06-02 02:08:42 : DMing TestyMcTest99 with You do not own any channels
+INFO:root:2013-06-02 02:09:23 : >>> RESTART <<<
+INFO:root:2013-06-02 02:16:26 : DMing TestyMcTest99 with Sorry, I don't understand, for help see http://stuff.thing
+INFO:root:2013-06-02 02:16:29 : DMing TestyMcTest99 with You do not own any channels
+INFO:root:2013-06-02 02:17:29 : >>> RESTART <<<
+INFO:root:2013-06-02 02:17:36 : DMing TestyMcTest99 with Sorry, I don't understand, for help see http://stuff.thing
+INFO:root:2013-06-02 02:17:43 : DMing TestyMcTest99 with You do not own any channels
+INFO:root:2013-06-02 02:17:43 : DMing TestyMcTest99 with You are not a member of any channels
+INFO:root:2013-06-02 02:17:43 : DMing TestyMcTest99 with You are not currently invited to any channels
+INFO:root:2013-06-02 02:47:14 : DMing TestyMcTest99 with Sorry, I don't understand, for help see http://stuff.thing
+INFO:root:2013-06-02 02:47:20 : DMing TestyMcTest99 with You own the following channels: #fish
+INFO:root:2013-06-02 02:47:20 : DMing TestyMcTest99 with You are a member of the following channels: #bait
+INFO:root:2013-06-02 02:50:55 : >>> RESTART <<<
+INFO:root:2013-06-02 02:51:47 : >>> RESTART <<<
+INFO:root:2013-06-02 02:52:20 : >>> RESTART <<<
+INFO:root:2013-06-02 02:52:39 : >>> RESTART <<<
+INFO:root:2013-06-02 02:53:00 : >>> RESTART <<<
+INFO:root:2013-06-02 02:54:03 : >>> RESTART <<<
+INFO:root:2013-06-02 02:54:24 : >>> RESTART <<<
+INFO:root:2013-06-02 02:56:23 : >>> RESTART <<<
+INFO:root:2013-06-02 02:56:33 : >>> RESTART <<<
+INFO:root:2013-06-02 02:57:04 : >>> RESTART <<<
+INFO:root:2013-06-02 02:57:14 : >>> RESTART <<<
+INFO:root:2013-06-02 21:57:18 : >>> RESTART <<<
+INFO:root:2013-06-02 22:09:40 : >>> RESTART <<<
+INFO:root:2013-06-02 22:11:58 : >>> RESTART <<<
+INFO:root:2013-06-02 22:14:28 : >>> RESTART <<<
+INFO:root:2013-06-02 22:16:43 : DMing TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 22:16:43 : DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 22:16:44 : DMing _BackChannel_ with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 22:16:45 : DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 22:20:36 : >>> RESTART <<<
+INFO:root:2013-06-02 22:20:46 : DMing TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 22:20:47 : DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 22:20:47 : DMing _BackChannel_ with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 22:20:48 : DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 22:38:51 : >>> RESTART <<<
+INFO:root:2013-06-02 22:39:41 : DMing TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 22:39:41 : DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 22:39:42 : DMing _BackChannel_ with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 22:39:43 : DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 22:40:17 : >>> RESTART <<<
+INFO:root:2013-06-02 22:40:22 : 1: DMing TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 22:40:23 : 1: DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 22:40:24 : 1: DMing _BackChannel_ with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 22:40:24 : 1: DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 22:45:18 : >>> RESTART <<<
+INFO:root:2013-06-02 22:47:59 : 1: DMing TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 22:48:00 : 1: DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 22:48:01 : 1: DMing _BackChannel_ with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 22:48:01 : 1: DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 22:51:21 : >>> RESTART <<<
+INFO:root:2013-06-02 22:51:50 : >>> RESTART <<<
+INFO:root:2013-06-02 22:52:15 : 1: DMing TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 22:52:16 : 1: DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 22:52:17 : 1: DMing _BackChannel_ with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 22:52:17 : 1: DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 23:01:12 : >>> RESTART <<<
+INFO:root:2013-06-02 23:14:08 : >>> RESTART <<<
+INFO:root:2013-06-02 23:14:15 : 1: DMing TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 23:14:16 : 1: DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 23:14:17 : 1: DMing _BackChannel_ with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 23:14:17 : 1: DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 23:21:39 : >>> RESTART <<<
+INFO:root:2013-06-02 23:25:29 : 1: DMing TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 23:25:30 : 1: DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 23:25:30 : 1: DMing _BackChannel_ with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 23:25:31 : 1: DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 23:32:16 : >>> RESTART <<<
+INFO:root:2013-06-02 23:34:37 : >>> RESTART <<<
+INFO:root:2013-06-02 23:35:16 : >>> RESTART <<<
+INFO:root:2013-06-02 23:35:51 : >>> RESTART <<<
+INFO:root:2013-06-02 23:36:18 : >>> RESTART <<<
+INFO:root:2013-06-02 23:36:23 : 1: DMing TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 23:36:24 : 1: DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 23:36:25 : 1: DMing _BackChannel_ with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 23:36:25 : 1: DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 23:38:25 : >>> RESTART <<<
+INFO:root:2013-06-02 23:38:31 : 1: DMing TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 23:38:32 : 1: DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 23:38:32 : 1: DMing _BackChannel_ with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 23:38:33 : 1: DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 23:40:46 : >>> RESTART <<<
+INFO:root:2013-06-02 23:41:00 : 1: DMing TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 23:41:00 : 1: DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 23:41:01 : 1: DMing _BackChannel_ with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 23:41:02 : 1: DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 23:46:03 : >>> RESTART <<<
+INFO:root:2013-06-02 23:47:43 : 1: DMing TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 23:47:44 : 1: DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 23:47:45 : 1: DMing _BackChannel_ with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 23:47:45 : 1: DMing _BackChannel_ with I still don't get it - see http://stuff.thing
+INFO:root:2013-06-02 23:48:24 : >>> RESTART <<<
+INFO:root:2013-06-02 23:52:07 : >>> RESTART <<<
+INFO:root:2013-06-02 23:52:12 : 1: DMing TestyMcTest99 with At 2013-06-02 23:52:12. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 23:52:13 : 1: DMing _BackChannel_ with At 2013-06-02 23:52:13. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 23:52:13 : 1: DMing _BackChannel_ with At 2013-06-02 23:52:13. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-02 23:54:17 : >>> RESTART <<<
+INFO:root:2013-06-03 00:01:09 : >>> RESTART <<<
+INFO:root:2013-06-03 00:01:14 : 1: DMing TestyMcTest99 with At 2013-06-03 00:01:14. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-03 00:01:14 : 1: DMing _BackChannel_ with At 2013-06-03 00:01:14. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-03 00:01:15 : 1: DMing _BackChannel_ with At 2013-06-03 00:01:15. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-03 00:01:16 : 1: DMing _BackChannel_ with At 2013-06-03 00:01:16. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-03 00:01:16 : 1: DMing _BackChannel_ with At 2013-06-03 00:01:16. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-03 00:02:29 : >>> RESTART <<<
+INFO:root:2013-06-03 00:02:36 : 1: DMing TestyMcTest99 with At 2013-06-03 00:02:36. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-03 00:02:36 : 1: DMing _BackChannel_ with At 2013-06-03 00:02:36. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-03 00:02:37 : 1: DMing _BackChannel_ with At 2013-06-03 00:02:37. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-03 00:02:38 : 1: DMing _BackChannel_ with At 2013-06-03 00:02:38. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-03 00:02:38 : 1: DMing _BackChannel_ with At 2013-06-03 00:02:38. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-03 00:04:34 : >>> RESTART <<<
+INFO:root:2013-06-05 00:02:35 : >>> RESTART <<<
+INFO:root:2013-06-05 00:03:41 : >>> RESTART <<<
+INFO:root:2013-06-05 00:03:46 : 1: DMing TestyMcTest99 with At 2013-06-05 00:03:46. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:03:46 : 1: DMing _BackChannel_ with At 2013-06-05 00:03:46. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:03:47 : 1: DMing _BackChannel_ with At 2013-06-05 00:03:47. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:03:48 : 1: DMing _BackChannel_ with At 2013-06-05 00:03:48. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:03:49 : 1: DMing _BackChannel_ with At 2013-06-05 00:03:49. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:03:49 : 1: DMing _BackChannel_ with At 2013-06-05 00:03:49. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:04:33 : >>> RESTART <<<
+INFO:root:2013-06-05 00:05:24 : >>> RESTART <<<
+INFO:root:2013-06-05 00:05:29 : 1: DMing TestyMcTest99 with At 2013-06-05 00:05:29. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:05:53 : >>> RESTART <<<
+INFO:root:2013-06-05 00:05:58 : 1: DMing TestyMcTest99 with At 2013-06-05 00:05:58. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:05:58 : 1: DMing _BackChannel_ with At 2013-06-05 00:05:58. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:05:59 : 1: DMing _BackChannel_ with At 2013-06-05 00:05:59. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:06:00 : 1: DMing _BackChannel_ with At 2013-06-05 00:06:00. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:06:00 : 1: DMing _BackChannel_ with At 2013-06-05 00:06:00. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:07:03 : >>> RESTART <<<
+INFO:root:2013-06-05 00:07:08 : 1: DMing TestyMcTest99 with At 2013-06-05 00:07:08. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:07:09 : 1: DMing _BackChannel_ with At 2013-06-05 00:07:09. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:07:09 : 1: DMing _BackChannel_ with At 2013-06-05 00:07:09. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:11:46 : >>> RESTART <<<
+INFO:root:2013-06-05 00:11:55 : 1: DMing TestyMcTest99 with At 2013-06-05 00:11:55. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:11:55 : 1: DMing _BackChannel_ with At 2013-06-05 00:11:55. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:11:56 : 1: DMing _BackChannel_ with At 2013-06-05 00:11:56. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:11:57 : 1: DMing _BackChannel_ with At 2013-06-05 00:11:57. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:11:58 : 1: DMing _BackChannel_ with At 2013-06-05 00:11:58. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:11:58 : 1: DMing _BackChannel_ with At 2013-06-05 00:11:58. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:14:12 : >>> RESTART <<<
+INFO:root:2013-06-05 00:14:18 : 1: DMing TestyMcTest99 with At 2013-06-05 00:14:18. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:17:14 : >>> RESTART <<<
+INFO:root:2013-06-05 00:17:20 : DMing (<140 chars) TestyMcTest99 with At 2013-06-05 00:17:20. Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:21:14 : >>> RESTART <<<
+INFO:root:2013-06-05 00:21:57 : >>> RESTART <<<
+INFO:root:2013-06-05 00:22:28 : >>> RESTART <<<
+INFO:root:2013-06-05 00:22:34 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:22:37 : DMing (<140 chars) TestyMcTest99 with Again, I'm sorry I don't understand that - see http://stuff.thing
+INFO:root:2013-06-05 00:22:42 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing
+INFO:root:2013-06-05 00:24:29 : >>> RESTART <<<
+INFO:root:2013-06-05 00:29:37 : >>> RESTART <<<
+INFO:root:2013-06-05 00:29:46 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thingSorry, I don't understand, for help - see http://stuff.thing             
+INFO:root:2013-06-05 00:29:55 : DMing (>140 chars) TestyMcTest99 with                         
+INFO:root:2013-06-05 00:32:07 : >>> RESTART <<<
+INFO:root:2013-06-05 00:32:12 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                                                   
+INFO:root:2013-06-05 00:32:18 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                                                 
+INFO:root:2013-06-05 00:32:24 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                               
+INFO:root:2013-06-05 00:32:34 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                                                   
+INFO:root:2013-06-05 00:32:42 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                  
+INFO:root:2013-06-05 00:32:47 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                     
+INFO:root:2013-06-05 22:56:40 : >>> RESTART <<<
+INFO:root:2013-06-05 22:56:47 : >>> RESTART <<<
+INFO:root:2013-06-05 23:00:33 : DMing (<140 chars) TestyMcTest99 with You own the following channels: #fish
+INFO:root:2013-06-05 23:00:34 : DMing (<140 chars) TestyMcTest99 with You are a member of the following channels: #cut
+INFO:root:2013-06-05 23:00:35 : DMing (<140 chars) TestyMcTest99 with #bait
+INFO:root:2013-06-05 23:07:55 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                              
+INFO:root:2013-06-05 23:07:59 : DMing (<140 chars) TestyMcTest99 with You own the following channels: #fish, #dog
+INFO:root:2013-06-05 23:08:00 : DMing (<140 chars) TestyMcTest99 with You are a member of the following channels: #cut
+INFO:root:2013-06-05 23:08:01 : DMing (<140 chars) TestyMcTest99 with #bait
+INFO:root:2013-06-05 23:09:16 : >>> RESTART <<<
+INFO:root:2013-06-05 23:09:22 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                    
+INFO:root:2013-06-05 23:09:26 : DMing (<140 chars) TestyMcTest99 with You own the following channels: #fish, #dog
+INFO:root:2013-06-05 23:09:28 : DMing (<140 chars) TestyMcTest99 with You are a member of the following channels: #cut
+INFO:root:2013-06-05 23:09:28 : DMing (<140 chars) TestyMcTest99 with You are currently invited to the following channels: #bait
+INFO:root:2013-06-05 23:11:08 : >>> RESTART <<<
+INFO:root:2013-06-05 23:11:12 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                                       
+INFO:root:2013-06-05 23:12:01 : >>> RESTART <<<
+INFO:root:2013-06-05 23:12:05 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                            
+INFO:root:2013-06-05 23:12:11 : DMing (<140 chars) TestyMcTest99 with @TestyMcTest99
+INFO:root:2013-06-05 23:13:17 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                                                            
+INFO:root:2013-06-05 23:16:21 : >>> RESTART <<<
+INFO:root:2013-06-05 23:17:16 : >>> RESTART <<<
+INFO:root:2013-06-05 23:17:20 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing             
+INFO:root:2013-06-05 23:18:30 : >>> RESTART <<<
+INFO:root:2013-06-05 23:18:35 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing     
+INFO:root:2013-06-05 23:20:00 : >>> RESTART <<<
+INFO:root:2013-06-05 23:20:10 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                                                 
+INFO:root:2013-06-05 23:22:57 : >>> RESTART <<<
+INFO:root:2013-06-05 23:23:02 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                                                        
+INFO:root:2013-06-05 23:25:36 : >>> RESTART <<<
+INFO:root:2013-06-05 23:25:40 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                       
+INFO:root:2013-06-05 23:27:13 : >>> RESTART <<<
+INFO:root:2013-06-05 23:27:18 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                 
+INFO:root:2013-06-05 23:27:53 : >>> RESTART <<<
+INFO:root:2013-06-05 23:27:57 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                
+INFO:root:2013-06-05 23:28:13 : >>> RESTART <<<
+INFO:root:2013-06-05 23:28:18 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                                       
+INFO:root:2013-06-05 23:30:55 : >>> RESTART <<<
+INFO:root:2013-06-05 23:30:59 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                      
+INFO:root:2013-06-05 23:32:08 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                    
+INFO:root:2013-06-05 23:34:06 : >>> RESTART <<<
+INFO:root:2013-06-05 23:34:28 : >>> RESTART <<<
+INFO:root:2013-06-05 23:34:32 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing          
+INFO:root:2013-06-05 23:35:05 : >>> RESTART <<<
+INFO:root:2013-06-05 23:35:10 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                                     
+INFO:root:2013-06-05 23:35:13 : DMing (<140 chars) TestyMcTest99 with New channel created called #goldfish
+INFO:root:2013-06-05 23:37:29 : >>> RESTART <<<
+INFO:root:2013-06-05 23:37:33 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                                     
+INFO:root:2013-06-05 23:37:38 : DMing (<140 chars) TestyMcTest99 with New channel created called #ï»¿Ithomiinae
+
+INFO:root:2013-06-05 23:48:40 : >>> RESTART <<<
+INFO:root:2013-06-05 23:48:45 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                                
+INFO:root:2013-06-05 23:49:26 : >>> RESTART <<<
+INFO:root:2013-06-05 23:49:30 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                     
+INFO:root:2013-06-05 23:50:11 : >>> RESTART <<<
+INFO:root:2013-06-05 23:50:18 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                              
+INFO:root:2013-06-05 23:52:01 : >>> RESTART <<<
+INFO:root:2013-06-05 23:52:05 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                     
+INFO:root:2013-06-05 23:56:45 : >>> RESTART <<<
+INFO:root:2013-06-05 23:56:51 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing  
+INFO:root:2013-06-05 23:57:46 : >>> RESTART <<<
+INFO:root:2013-06-05 23:57:50 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing              
+INFO:root:2013-06-06 00:00:48 : >>> RESTART <<<
+INFO:root:2013-06-06 00:00:52 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                              
+INFO:root:2013-06-06 00:05:20 : >>> RESTART <<<
+INFO:root:2013-06-06 00:05:27 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                           
+INFO:root:2013-06-06 00:05:53 : >>> RESTART <<<
+INFO:root:2013-06-06 00:05:57 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                                                
+INFO:root:2013-06-06 00:07:06 : >>> RESTART <<<
+INFO:root:2013-06-06 00:07:57 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                               
+INFO:root:2013-06-06 00:08:48 : >>> RESTART <<<
+INFO:root:2013-06-06 00:08:52 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                                                               
+INFO:root:2013-06-06 00:09:28 : >>> RESTART <<<
+INFO:root:2013-06-06 00:09:33 : DMing (<140 chars) TestyMcTest99 with Sorry, I don't understand, for help - see http://stuff.thing                                               
+INFO:root:2013-06-06 00:09:36 : DMing (<140 chars) TestyMcTest99 with New channel created called #Haemodoraceae

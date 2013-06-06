@@ -198,7 +198,14 @@ def do_new(screen_name, parts, hashtags, ats):
     dont_understand(screen_name)
   else:
     new_hashtag = "#" + urllib2.urlopen("http://randomword.setgetgo.com/get.php").read()
-    new_hashtag = new_hashtag[4:-2]
+    new_hashtag = new_hashtag[3:-2]
+
+    print new_hashtag
+    length = len(new_hashtag)
+    for i in range(0, length):
+      print ord(new_hashtag[i])
+    sys.exit()
+
     new_hashtag = '#' + new_hashtag
     cursor.execute("INSERT INTO channels (hashtag, owner_screen_name) VALUES ('%s', '%s')" % (new_hashtag, screen_name))
     cursor.execute("INSERT INTO users (screen_name, channel_hashtag, member) VALUES ('%s', '%s', '%s')" % (screen_name, new_hashtag, '1'))

@@ -20,33 +20,13 @@ user_iter = stream.user()
 
 my_string = ""
 for entity in user_iter:
-  try:
-    for entry in entity:
-      value = entity.get(entry)
-      value_to_print = ""
-      the_type = type(value)
-      if ((the_type == list) or (the_type == dict)):
-        value_to_print = '[%s]' % ', '.join(map(str, value))
-      elif (the_type == bool):
-        if (value == True):
-          value_to_print = "True"
-        else:
-           value_to_print = "False"
-      elif (the_type == unicode):
-        value_to_print = value.decode('unicode-escape')
-
-      print entry + " = " + value_to_print
-      if (entry == 'user'):
-        print "user['screen_name'] = " + (entity.get('user')['screen_name']).decode('unicode-escape')
-      elif (entry == 'source'):
-        print "source['screen_name'] = " + (entity.get('source')['screen_name']).decode('unicode-escape')
-      elif (entry == 'direct_message'):
-        print "direct['sender_screen_name'] = " + (entity.get('direct_message')['sender_screen_name']).decode('unicode-escape')
-
-    print "\n +++++ \n";
-
-  except:    
-    print "Unexpected error:", sys.exc_info()[0]
+  print "WTF 1!"
+  if ('event' in entity):
+    if (entity.get('event') == 'follow'):
+      print "Follow"
+  elif ('direct_message' in entity):
+    print "DM"
+    print "WTF 2!"
 
 ######
 
