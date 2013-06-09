@@ -57,9 +57,9 @@ def do_broadcast(screen_name, parts, hashtags, ats):
 
 # Function to DM passed-in text to everyone on a channel
 def broadcast(screen_name, channel, text):
-  cursor.execute("SELECT screen_name FROM users WHERE channel_hastag=%s AND member=%s",[channel, True])
+  cursor.execute("SELECT screen_name FROM users WHERE channel_hashtag='%s' AND member='%s'" %(channel, 1))
   for row in cursor.fetchall():
-    if (row[0] is not screen_name):
+    if (row[0] != screen_name):
       dm(row[0], text)
 
 # Function to DM passed-in text to supplied user
@@ -79,12 +79,29 @@ def dm(screen_name, dm_text):
 
 # Function to check whether a given user is a member of a channel
 def is_member(screen_name, channel):
-  rows_returned = cursor.execute("SELECT member FROM users WHERE screen_name='%s' AND channel_hashtag='%s'" % (screen_name, channel))
+  rows_returned = cursor.execute("SELECT screen_name FROM users WHERE screen_name='%s' AND channel_hashtag='%s' AND member=1" % (screen_name, channel))
   if (rows_returned == 0):
     return None
   else:
     row = cursor.fetchone()
     return row[0]
+
+# Function to check whether a given user is invited to a channel
+def is_invited(screen_name, channel):
+  rows_returned = cursor.execute("SELECT screen_name FROM users WHERE screen_name='%s' AND channel_hashtag='%s' AND member=0" % (screen_name, channel))
+  if (rows_returned == 0):
+    return None
+  else:
+    row = cursor.fetchone()
+    return row[0]
+
+# Function to check whether a given user owns a channel
+def is_owner(screen_name, channel):
+  rows_returned = cursor.execute("SELECT UID FROM channels WHERE owner_screen_name='%s' AND hashtag='%s'" % (screen_name, channel))
+  if (rows_returned == 0):
+    return None
+  else:
+    return screen_name
 
 # Function to return "don't understand" to a user
 def dont_understand(screen_name):
@@ -94,9 +111,10 @@ def dont_understand(screen_name):
   dm(screen_name, dm_text)
 
 # Function to check whether a given user follows BackChannel
-def is_follower(screen_name):
+def is_following(screen_name):
   result = twitter.friendships.show(source_screen_name = '_BackChannel_', target_screen_name = screen_name)
-  return(result["relationship"]["target"]["followed_by"])
+  return_value = result["relationship"]["target"]["followed_by"]
+  return(return_value)
 
 # Function to process incoming tweets or DMs
 def process_message(message):
@@ -133,7 +151,7 @@ def process_dm(screen_name, parts, hashtags, ats):
     if (len(hashtags) == 0):
       dont_understand(screen_name)
     else:
-      if (is_member(screen_name, hashtags[0]) == True):
+      if (is_member(screen_name, hashtags[0]) is not None):
         do_broadcast(screen_name, parts, hashtags, ats)
       else:
         dont_understand(screen_name)
@@ -211,27 +229,18 @@ def do_kill(screen_name, parts, hashtags, ats):
     dont_understand(screen_name)
   else:
     channel = hashtags[0]
-    num_rows = cursor.execute("SELECT owner_screen_name FROM channel WHERE channel_hashtag=%s",[channel])
-    if (num_rows == 0):
-      # No such channel
+    check_owner = is_owner(screen_name, channel)
+    if (check_owner is None):
+      # Channel not owned by user or doesn't exist
       dont_understand(screen_name)
     else:
-      row = cursor.fetchone()
-      if (row[0] != screen_name):
-        # The user doesn't own the channel
-          dont_understand(screen_name)
-      else:
-        # Inform all the full members
-        broadcast(channel, "@" + screen_name + " has closed channel " + channel)
-        # Remove all the invited members
-        cursor.execute("SELECT screen_name FROM users WHERE channel=%s AND member=%s",[channel, False])
-        for row in cursor.fetchall():
-          if (is_follower(row[0])):
-            dm(row[0], "@" + screen_name + " has closed channel " + channel)
-        # Remove from DB
-        cursor.execute("DELETE from users WHERE channel_hashtag=%s",[channel])
-        cursor.execute("DELETE from channels WHERE channel_hashtag=%s",[channel])
-        con.commit()
+      # Inform all the full members
+      broadcast(screen_name, channel, "@" + screen_name + " has closed channel " + channel)
+      dm(screen_name, "Channel " + channel + " has been removed")
+      # Remove from DB
+      cursor.execute("DELETE from users WHERE channel_hashtag='%s'" % (channel))
+      cursor.execute("DELETE from channels WHERE hashtag='%s'" % (channel))
+      con.commit()
 
 # Attempt to add potentially multiple people to an existing channel. Must be owner.
 # They musy be followers. DM failure or DM owner to say they've been invited.
@@ -239,7 +248,7 @@ def do_add(screen_name, parts, hashtags, ats):
   if (len(hashtags) == 0):
     dont_understand(screen_name)
   else:
-    channel = hashtag[0]
+    channel = hashtags[0]
     if (len(ats) == 0):
       dont_understand(screen_name)
     else:
@@ -250,7 +259,7 @@ def do_add(screen_name, parts, hashtags, ats):
       for at in ats:
         if (is_member(at, channel)):
           member_list.append(at)
-        elif (1 == cursor.execute("SELECT screen_name FROM users WHERE channel_hashtag=%s AND screen_name=%s AND member=False",[channel, at])):
+        elif (is_invited(at, channel)):
           invited_list.append(at)
         elif (not is_following(at)):
           not_following_list.append(at)
@@ -260,30 +269,30 @@ def do_add(screen_name, parts, hashtags, ats):
       if (len(member_list) != 0):
         member_string = "Unable to invite following as they are already members: "
         for member in member_list:
-          member_string += "@" + member + ", "
+          member_string += member + ", "
         member_string[:-2]
         dm(screen_name, member_string)
       if (len(invited_list) != 0):
         invited_string = "Unable to invite following as they are already invited to " + channel + ": "
         for invited in invited_list:
-          invited_string += "@" + invited + ", "
+          invited_string += invited + ", "
         invited_string[:-2]
         dm(screen_name, invited_string)
       if (len(not_following_list) != 0):
         not_following_string = "Unable to invite following as they are not following @_BackChannel_: "
         for not_following in not_following_list:
-          not_following_string += "@" + not_following + ", "
+          not_following_string += not_following + ", "
         not_following_string[:-2]
         dm(screen_name, not_following_string)
       new_string = "Invited the following to join " + channel + ": "
-      for new in ats:
-        cursor.execute("INSERT INTO users VALUES (%s, %s, False)",[new, channel])
+      for invitee in ats:
+        invitee = invitee[1:]
+        cursor.execute("INSERT INTO users (screen_name, channel_hashtag, member) VALUES ('%s', '%s', 0)" % (invitee, channel))
         con.commit()
-        dm(new, screen_name + " has invited you to join channel " + channel)
-        new_string += "@" + new + ", "
-      new_string[:-2]
+        dm(invitee, screen_name + " has invited you to join channel " + channel)
+        new_string += invitee + ", "
+      new_string = new_string[:-2]
       dm(screen_name, new_string)
-
 
 # Attempt to boot someone off a channel, DM failure back or remove and DM person gone and all left
 def do_boot(screen_name, parts, hashtags, ats):
@@ -294,22 +303,25 @@ def do_boot(screen_name, parts, hashtags, ats):
     if (len(ats) != 1):
       dont_understand(screen_name)
     else:
-      bootee = ats[1:] # Strip '@' off the front
-      check_val = is_member(bootee, channel)
-      if (check_val is None):
+      bootee = ats[0][1:] # Strip '@' off the front
+      check_member = is_member(bootee, channel)
+      check_invited = is_invited(bootee, channel)
+      if ((check_member is None) and (check_invited is None)):
         # Can't boot a non-member
         dont_understand(screen_name)
       else:
-        cursor.execute("DELETE FROM users WHERE channel_hashtag=%s AND screen_name=%s",[channel, bootee])
+        cursor.execute("DELETE FROM users WHERE channel_hashtag='%s' AND screen_name='%s'" % (channel, bootee))
         con.commit()
-        if (check_val == False):
+        if (check_member is None):
           # They were only at the invite stage
           dm(screen_name, "@" + bootee + " has been de-invited from channel " + channel)
           dm(bootee, "You have been de-invited from channel " + channel)
+          broadcast(screen_name, channel, "@" + screen_name + " has de-invited @" + bootee + "from channel " + channel)
         else:
           # They were a full member
           dm(bootee, "@" + screen_name + " has removed you from channel " + channel)
-          broadcast(channel, "@" + screen_name + " has removed @" + bootee + "from channel " + channel)
+          dm(screen_name, "@" + bootee + " has been removed from channel " + channel)
+          broadcast(screen_name, channel, "@" + screen_name + " has removed @" + bootee + "from channel " + channel)
 
 # Attempt to join an existing channel, check if they have been invited, if successful
 # DM all existing member of the list saying they joined and reply to them
@@ -318,17 +330,18 @@ def do_join(screen_name, parts, hashtags, ats):
     dont_understand(screen_name)
   else:
     channel = hashtags[0]
-    check_val = is_member(screen_name, channel)
-    if (check_val is None):
+    check_member = is_member(screen_name, channel)
+    if (check_member is not None):
+      dm(screen_name, "You are already a member of channel " + channel)
+    check_invited = is_invited(screen_name, channel)
+    if (check_invited is None):
       # They've never even been invited
       dont_understand(screen_name)
     else:
-      if (check_val is True):
-        dm(screen_name, "You are already a member of channel " + channel)
-      else:
-        cursor.execute("INSERT INTO users (screen_name, channel_hashtag, member) VALUES (%S, %s, %s)",[screen_name, channel, False])
-        con.commit()
-        broadcast(channel, "Please welcome " + screen_name + " to channel " + channel)
+      cursor.execute("UPDATE users SET member=1 WHERE screen_name='%s' AND channel_hashtag='%s'" % (screen_name, channel))
+      con.commit()
+      broadcast(screen_name, channel, "Please welcome " + screen_name + " to channel " + channel)
+      dm(screen_name, "You have successfully joined channel " + channel)
         
 # Attempt to leave an existing channel, check they're a member, DM all current members 
 # to say they've left and DM they to say left
@@ -337,21 +350,22 @@ def do_leave(screen_name, parts, hashtags, ats):
     dont_understand(screen_name)
   else:
     channel = hashtags[0]
-    check_val = is_member(screen_name, channel)
-    if (check_val is None):
-      # They're not a member of that channel
+    check_member = is_member(screen_name, channel)
+    check_invited = is_invited(screen_name, channel)
+    if ((check_member is None) and (check_invited is None)):
+      # They're not a member or invited to that channel
       dont_understand(screen_name)
     else:
-      cursor.execute("DELETE FROM users WHERE channel_hashtag=%s AND screen_name=%s",[channel, screen_name])
+      cursor.execute("DELETE FROM users WHERE channel_hashtag='%s' AND screen_name='%s'" % (channel, screen_name))
       con.commit()
-      if (check_val):
+      if (check_member is not None):
         # They were a full member
         dm(screen_name, "You have left channel " + channel)
-        broadcast(channel, "@" + screen_name + " has left channel " + channel)
+        broadcast(screen_name, channel, "@" + screen_name + " has left channel " + channel)
       else:
         # They were a pending member
         dm(screen_name, "Pending request for channel " + channel + " has been removed")
-        broadcast(channel, "@" + screen_name + " has declined to join channel " + channel)
+        broadcast(screen_name, channel, "@" + screen_name + " has declined to join channel " + channel)
 
 # MAIN
 
@@ -386,10 +400,11 @@ for entity in user_iter:
     if (entity.get('event') == 'follow'):
       # It's a follow, so we follow back (if we're not doing so already) and DM they to say hi      
       screen_name = (entity.get('source')['screen_name']).decode('unicode-escape')
-      if (not is_follower(screen_name)):
-        twitter.friendships.create(screen_name = screen_name)
-      dm_text = "Hi " + screen_name + ", welcome to BackChannel, have a read of the instructions : http://stuff.thing"
-      dm(screen_name, dm_text)
+      if (screen_name != "_BackChannel_"):
+        if (not is_follower(screen_name)):
+          twitter.friendships.create(screen_name = screen_name)
+        dm_text = "Hi " + screen_name + ", welcome to BackChannel, have a read of the instructions : http://stuff.thing"
+        dm(screen_name, dm_text)
   elif ('direct_message' in entity):
     # Okay, it's a DM so we're in business
     screen_name = (entity.get('direct_message')['sender_screen_name']).decode('unicode-escape')
@@ -405,7 +420,6 @@ for entity in user_iter:
 
 Test account : @TestyMcTest99
 
-Database: LIKE %s",[2,digest+"_"+charset+"_%"])
 CREATE TABLE IF NOT EXISTS `channels` (
   `UID` int(11) NOT NULL auto_increment,
   `hashtag` varchar(50) NOT NULL,
@@ -420,5 +434,9 @@ CREATE TABLE IF NOT EXISTS `users` (
   `member` tinyint(1) NOT NULL,
   PRIMARY KEY  (`UID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+grant all on backchannel.* to cholten99@localhost;
+set password for cholten99@localhost = password('cholten99');
+
 
 """
